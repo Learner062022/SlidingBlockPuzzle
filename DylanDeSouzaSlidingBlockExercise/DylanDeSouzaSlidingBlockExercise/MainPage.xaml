@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DylanDeSouzaSlidingBlockExercise.MainPage">
+
+    <Grid x:Name="imagesGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0">
+            <Frame>
+                <Label Text="Congradulations for winning!" x:Name="wonLabel" IsVisible="False"/>
+            </Frame>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid Grid.Column="0" x:Name="topLeftGrid">
+                <Image>
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <Grid Grid.Column="1" x:Name="topMiddleGrid">
+                <Image Source="Assets\\top-middle.png" x:Name="topMiddleImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <Grid Grid.Column="2" x:Name="topRightGrid">
+                <Image Source="Assets\\top-right.png" x:Name="topRightImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid Grid.Column="0" x:Name="centreLeftGrid">
+                <Image Source="Assets\\centre-left.png" x:Name="centreLeftImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <Grid Grid.Column="1" x:Name="centreMiddleGrid">
+                <Image Source="Assets\\centre-middle.png" x:Name="centreMiddleImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <Grid Grid.Column="2" x:Name="centreRightGrid">
+                <Image Source="Assets\\centre-right.png" x:Name="centreRightImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid Grid.Column="0" x:Name="bottomLeftGrid">
+                <Image Source="Assets\\bottom-left.png" x:Name="bottomLefImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <Grid Grid.Column="1" x:Name="bottomMiddleGrid">
+                <Image Source="Assets\\bottom-middle.png" x:Name="bottomMiddleImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <Grid Grid.Column="2" x:Name="bottomRightGrid">
+                <Image Source="Assets\\bottom-right.png" x:Name="bottomRightImage">
+                    <Image.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipe"/>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwipe"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Button Clicked="ResetAndRandomiseBoard" Text="Reset"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>
