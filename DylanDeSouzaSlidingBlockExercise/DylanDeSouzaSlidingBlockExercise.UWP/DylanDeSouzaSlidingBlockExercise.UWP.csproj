@@ -104,12 +104,14 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\bottom-left.png" />
-    <Content Include="Assets\bottom-middle.png" />
-    <Content Include="Assets\bottom-right.png" />
-    <Content Include="Assets\centre-left.png" />
-    <Content Include="Assets\centre-middle.png" />
-    <Content Include="Assets\centre-right.png" />
+    <Content Include="Assets\Images\bottom-left.png" />
+    <Content Include="Assets\Images\bottom-middle.png" />
+    <Content Include="Assets\Images\bottom-right.png" />
+    <Content Include="Assets\Images\middle-left.png" />
+    <Content Include="Assets\Images\middle-middle.png" />
+    <Content Include="Assets\Images\middle-right.png" />
+    <Content Include="Assets\Images\top-middle.png" />
+    <Content Include="Assets\Images\top-right.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
@@ -134,8 +136,6 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-200.png" />
     <Content Include="Assets\StoreLogo.scale-400.png" />
-    <Content Include="Assets\top-middle.png" />
-    <Content Include="Assets\top-right.png" />
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
@@ -152,9 +152,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.14" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DylanDeSouzaSlidingBlockExercise\DylanDeSouzaSlidingBlockExercise.csproj">

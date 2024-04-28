@@ -19,7 +19,7 @@ namespace DylanDeSouzaSlidingBlockExercise.UWP
     {
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
 
             LoadApplication(new DylanDeSouzaSlidingBlockExercise.App());
         }

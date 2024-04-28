@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DylanDeSouzaSlidingBlockExe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DylanDeSouzaSlidingBlockExercise.iOS", "DylanDeSouzaSlidingBlockExercise\DylanDeSouzaSlidingBlockExercise.iOS\DylanDeSouzaSlidingBlockExercise.iOS.csproj", "{09F91787-0967-4C18-ABD5-4521B74CE5CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DylanDeSouzaSlidingBlockExercise", "DylanDeSouzaSlidingBlockExercise\DylanDeSouzaSlidingBlockExercise\DylanDeSouzaSlidingBlockExercise.csproj", "{DA705C82-E1CB-4D16-A7C1-4B46F4526EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DylanDeSouzaSlidingBlockExercise", "DylanDeSouzaSlidingBlockExercise\DylanDeSouzaSlidingBlockExercise\DylanDeSouzaSlidingBlockExercise.csproj", "{DA705C82-E1CB-4D16-A7C1-4B46F4526EDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

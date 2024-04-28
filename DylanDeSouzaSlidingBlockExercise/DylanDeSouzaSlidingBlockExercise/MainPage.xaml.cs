@@ -1,50 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace DylanDeSouzaSlidingBlockExercise
 {
     public partial class MainPage : ContentPage
     {
+        MainPageModel mainPageModel;
         public MainPage()
         {
             InitializeComponent();
-            // RandomiseBoard
+            mainPageModel = new MainPageModel(imagesGrid);
         }
 
-        public int GetColumnEmptyBlock()
+        void OnSwipe(object sender, SwipedEventArgs e)
         {
-            int columnNum = 0;
-            return columnNum;
-        }
+            Image image = (Image)sender;
+            int row = Grid.GetRow(image);
+            int col = Grid.GetColumn(image);
+            Debug.WriteLine($"Swipe detected on image at row {row} and column {col} with direction {e.Direction}");
 
-        public int GetRowEmptyBlock()
-        {
-            int RowNum = 0;
-            return RowNum;
-        }
-
-        private void OnSwipe(object sender, SwipedEventArgs e)
-        {
-            // use sender to find the column and row of the image being swiped 
-            Game.CheckWon();
-            Game.SlidePiece(/* column and row of the image being swiped */);
-        }
-
-        private void RandomiseBoard()
-        {
+            mainPageModel.SlidePieceManually(row, col);
 
         }
 
-        private void ResetAndRandomiseBoard(object sender, EventArgs e)
+        void ButtonClicked(object sender, EventArgs e)
         {
-            // RandomiseBoard
-            Game.won = false;
+            
         }
     }
 }
