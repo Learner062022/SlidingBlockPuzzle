@@ -9,7 +9,6 @@ namespace DylanDeSouzaSlidingBlockExercise
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 
